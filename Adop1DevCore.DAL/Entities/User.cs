@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Adop1DevCore.DAL.Entities
+namespace Adopte1DevCore.DAL.Entities
 {
     public class User
     {

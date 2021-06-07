@@ -1,3 +1,5 @@
+using Adopte1DevCore.ASP.Helpers.Sessions;
+using AspCore.Tools.Sessions.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -9,7 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Adope1DevCore.ASP
+namespace Adopte1DevCore.ASP
 {
     public class Startup
     {
@@ -24,6 +26,8 @@ namespace Adope1DevCore.ASP
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            ConfigureSession.Configure(services, "Adopt1DevCookie", 25);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,7 +47,9 @@ namespace Adope1DevCore.ASP
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseSession();
+            //Permet à notre classe de gestion de session de résoudre les services
+            SessionUtils.Services = app.ApplicationServices;
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

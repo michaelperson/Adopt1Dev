@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Adopte1DevCore.ASP</AssemblyName>
+    <RootNamespace>Adopte1DevCore.ASP</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Adop1DevCore.DAL\Adopte1DevCore.DAL.csproj" />
+    <ProjectReference Include="..\Adop1DevCore.Models\Adopte1DevCore.Models.csproj" />
+    <ProjectReference Include="..\AspCore.Tools\AspCore.Tools.csproj" />
+  </ItemGroup>
+
+</Project>

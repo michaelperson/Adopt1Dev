@@ -1,4 +1,4 @@
-﻿using Adop1DevCore.DAL.Entities;
+﻿using Adopte1DevCore.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Adop1DevCore.DAL.EntityConfigs
+namespace Adopte1DevCore.DAL.EntityConfigs
 {
     public class CategoryConfig : IEntityTypeConfiguration<Category>
     {

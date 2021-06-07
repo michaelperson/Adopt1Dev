@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Adopte1DevCore.DAL</AssemblyName>
+    <RootNamespace>Adopte1DevCore.DAL</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

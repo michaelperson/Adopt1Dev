@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Adope1DevCore.ASP
+namespace Adopte1DevCore.ASP
 {
     public class Program
     {

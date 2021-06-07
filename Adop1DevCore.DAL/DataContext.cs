@@ -1,5 +1,5 @@
-﻿using Adop1DevCore.DAL.Entities;
-using Adop1DevCore.DAL.EntityConfigs;
+﻿using Adopte1DevCore.DAL.Entities;
+using Adopte1DevCore.DAL.EntityConfigs;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Adop1DevCore.DAL
+namespace Adopte1DevCore.DAL
 {
     public class DataContext : DbContext
     {

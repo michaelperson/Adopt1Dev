@@ -1,4 +1,5 @@
-﻿using Adope1DevCore.ASP.Models;
+﻿using Adopte1DevCore.ASP.Helpers.Sessions;
+using Adope1DevCore.ASP.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,7 +8,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Adope1DevCore.ASP.Controllers
+namespace Adopte1DevCore.ASP.Controllers
 {
     public class HomeController : Controller
     {
@@ -20,6 +21,7 @@ namespace Adope1DevCore.ASP.Controllers
 
         public IActionResult Index()
         {
+             
             return View();
         }
 
