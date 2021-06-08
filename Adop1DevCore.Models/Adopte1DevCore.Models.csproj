@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="services\" />
+    <ProjectReference Include="..\Adop1DevCore.DAL\Adopte1DevCore.DAL.csproj" />
   </ItemGroup>
 
 </Project>

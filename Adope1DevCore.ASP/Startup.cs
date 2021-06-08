@@ -1,4 +1,9 @@
 using Adopte1DevCore.ASP.Helpers.Sessions;
+using Adopte1DevCore.DAL;
+using Adopte1DevCore.DAL.Entities;
+using Adopte1DevCore.Models;
+using Adopte1DevCore.Models.Interfaces;
+using Adopte1DevCore.Models.services;
 using AspCore.Tools.Sessions.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,6 +32,12 @@ namespace Adopte1DevCore.ASP
         {
             services.AddControllersWithViews();
             ConfigureSession.Configure(services, "Adopt1DevCookie", 25);
+
+
+            //Injection de nos services
+            services.AddScoped<DataContext>();
+            services.AddScoped<IService<CategoryModel, Category>, CategoryService>();
+            services.AddScoped<IService<SkillModel, Skill>, SkillService>();
 
         }
 
