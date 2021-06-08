@@ -4,14 +4,16 @@ using Adopte1DevCore.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Adopte1DevCore.DAL.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20210608092036_FuulWithDataSeeding")]
+    partial class FuulWithDataSeeding
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -37,48 +39,6 @@ namespace Adopte1DevCore.DAL.Migrations
                         .IsUnique();
 
                     b.ToTable("Category");
-
-                    b.HasData(
-                        new
-                        {
-                            CategoryId = 1,
-                            Label = "Développement Back-End"
-                        },
-                        new
-                        {
-                            CategoryId = 2,
-                            Label = "Développement Front-End"
-                        },
-                        new
-                        {
-                            CategoryId = 3,
-                            Label = "IOT"
-                        },
-                        new
-                        {
-                            CategoryId = 4,
-                            Label = "Business Intelligence"
-                        },
-                        new
-                        {
-                            CategoryId = 5,
-                            Label = "Big Data"
-                        },
-                        new
-                        {
-                            CategoryId = 6,
-                            Label = "IA"
-                        },
-                        new
-                        {
-                            CategoryId = 7,
-                            Label = "Bureautique"
-                        },
-                        new
-                        {
-                            CategoryId = 8,
-                            Label = "Analyse"
-                        });
                 });
 
             modelBuilder.Entity("Adopte1DevCore.DAL.Entities.Salary", b =>
@@ -139,73 +99,6 @@ namespace Adopte1DevCore.DAL.Migrations
                         .IsUnique();
 
                     b.ToTable("Skill");
-
-                    b.HasData(
-                        new
-                        {
-                            SkillId = 9,
-                            Label = "Angular"
-                        },
-                        new
-                        {
-                            SkillId = 1,
-                            Label = "ASP.NET Core"
-                        },
-                        new
-                        {
-                            SkillId = 5,
-                            Label = "C#"
-                        },
-                        new
-                        {
-                            SkillId = 3,
-                            Label = "ColdFusion"
-                        },
-                        new
-                        {
-                            SkillId = 13,
-                            Label = "Excel"
-                        },
-                        new
-                        {
-                            SkillId = 6,
-                            Label = "Java"
-                        },
-                        new
-                        {
-                            SkillId = 7,
-                            Label = "Javascript"
-                        },
-                        new
-                        {
-                            SkillId = 4,
-                            Label = "Node"
-                        },
-                        new
-                        {
-                            SkillId = 2,
-                            Label = "PHP"
-                        },
-                        new
-                        {
-                            SkillId = 10,
-                            Label = "PowerBI"
-                        },
-                        new
-                        {
-                            SkillId = 11,
-                            Label = "Qlick"
-                        },
-                        new
-                        {
-                            SkillId = 8,
-                            Label = "React"
-                        },
-                        new
-                        {
-                            SkillId = 12,
-                            Label = "Word"
-                        });
                 });
 
             modelBuilder.Entity("Adopte1DevCore.DAL.Entities.SkillUser", b =>

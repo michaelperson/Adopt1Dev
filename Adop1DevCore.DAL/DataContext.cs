@@ -1,4 +1,5 @@
-﻿using Adopte1DevCore.DAL.Entities;
+﻿using Adopte1DevCore.DAL.Datas;
+using Adopte1DevCore.DAL.Entities;
 using Adopte1DevCore.DAL.EntityConfigs;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -42,6 +43,7 @@ namespace Adopte1DevCore.DAL
             builder.ApplyConfiguration(new SkillConfig());
             builder.ApplyConfiguration(new SkillUserConfig());
             builder.ApplyConfiguration(new UserConfig());
+            InitDB.LoadData(builder);
         }
 
 
