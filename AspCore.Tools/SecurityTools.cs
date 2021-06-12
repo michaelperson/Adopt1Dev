@@ -17,5 +17,21 @@ namespace AspCore.Tools
             result = shaM.ComputeHash(data);
             return result;
         }
+
+        public static string HashMeBase64(string passwordIn)
+        {
+            //Je transforme le password en tableau de bytes
+            byte[] data = Encoding.UTF8.GetBytes(passwordIn);
+            byte[] result;
+            //J'instancie la classe qui permet de hasher
+            SHA512 shaM = new SHA512Managed();
+            //Je calcule le sha (Miaouw)
+            result = shaM.ComputeHash(data);
+            return Convert.ToBase64String(result, 0, result.Length);
+        }
+
+
+
+        
     }
 }
