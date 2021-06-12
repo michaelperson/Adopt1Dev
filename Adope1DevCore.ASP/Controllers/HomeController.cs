@@ -1,5 +1,4 @@
-﻿using Adopte1DevCore.ASP.Helpers.Sessions;
-using Adope1DevCore.ASP.Models;
+﻿using Adopte1DevCore.ASP.Helpers.Sessions; 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -19,16 +18,18 @@ namespace Adopte1DevCore.ASP.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IService<CategoryModel, Category> _catService;
         private readonly IService<SkillModel, Skill> _skillService;
-        public HomeController(ILogger<HomeController> logger, IService<CategoryModel, Category> catService, IService<SkillModel, Skill> skillService)
+        private readonly IService<UserModel, User> _userService;
+        public HomeController(ILogger<HomeController> logger, IService<CategoryModel, Category> catService, IService<SkillModel, Skill> skillService, IService<UserModel, User> userservice)
         {
             _logger = logger;
             _catService = catService;
             _skillService = skillService;
+            _userService = userservice;
         }
 
         public IActionResult Index()
         {
-            HomeViewModel Hm = new HomeViewModel(_catService, _skillService);
+            HomeViewModel Hm = new HomeViewModel(_catService, _skillService, _userService);
 
 
             return View(Hm);

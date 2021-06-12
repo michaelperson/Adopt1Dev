@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 
 namespace Adopte1DevCore.Models.services
 {
-    public class CategoryService : IService<CategoryModel, Category>
+    public class CategoryService : BaseService, IService<CategoryModel, Category>
     {
-        private readonly DataContext _dc;
+        
 
-        public CategoryService(DataContext dc)
+        public CategoryService(DataContext dc): base(dc)
         {
-            _dc = dc;
+             
         }
         public bool Delete(int id)
         {

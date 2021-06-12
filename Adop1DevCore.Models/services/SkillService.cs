@@ -10,13 +10,11 @@ using System.Threading.Tasks;
 
 namespace Adopte1DevCore.Models.services
 {
-    public class SkillService : IService<SkillModel, Skill>
+    public class SkillService : BaseService, IService<SkillModel, Skill>
     {
-        private readonly DataContext _dc;
-
-        public SkillService(DataContext dc)
+        public SkillService(DataContext dc) : base(dc)
         {
-            _dc = dc;
+
         }
         public bool Delete(int id)
         {

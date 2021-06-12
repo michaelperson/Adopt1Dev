@@ -1,6 +1,6 @@
 using System;
 
-namespace Adope1DevCore.ASP.Models
+namespace Adopte1DevCore.ASP.Models
 {
     public class ErrorViewModel
     {

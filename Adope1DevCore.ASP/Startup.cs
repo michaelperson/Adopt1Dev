@@ -38,6 +38,7 @@ namespace Adopte1DevCore.ASP
             services.AddScoped<DataContext>();
             services.AddScoped<IService<CategoryModel, Category>, CategoryService>();
             services.AddScoped<IService<SkillModel, Skill>, SkillService>();
+            services.AddScoped<IService<UserModel, User>, UserService>();
 
         }
 

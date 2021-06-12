@@ -12,10 +12,12 @@ namespace Adopte1DevCore.ASP.Models
     {
         IService<CategoryModel, Category> _catService;
         IService<SkillModel, Skill> _skillService;
-        public HomeViewModel(IService<CategoryModel, Category> catService, IService<SkillModel, Skill> skillService)
+        IService<UserModel, User> _userService;
+        public HomeViewModel(IService<CategoryModel, Category> catService, IService<SkillModel, Skill> skillService, IService<UserModel, User> userService)
         {
             _catService = catService;
             _skillService = skillService;
+            _userService = userService;
         }
 
         public List<CategoryModel> Categories
@@ -27,5 +29,12 @@ namespace Adopte1DevCore.ASP.Models
         {
             get { return _skillService.GetAll().ToList(); }
         }
-    }
+       
+    public List<UserModel> Les6DerniersUsers
+        {
+            get { return _userService.GetAll().OrderByDescending(s=>s.UserId).Take(10).ToList(); }
+        }
+   
+
+}
 }

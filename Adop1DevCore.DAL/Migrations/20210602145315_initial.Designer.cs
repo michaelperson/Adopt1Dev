@@ -11,7 +11,7 @@ namespace Adopte1DevCore.DAL.Migrations
 {
     [DbContext(typeof(DataContext))]
     [Migration("20210602145315_initial")]
-    partial class initial
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

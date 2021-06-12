@@ -33,7 +33,7 @@ namespace Adopte1DevCore.DAL.EntityConfigs
                 .IsRequired()
                 ;
             builder.Property(u => u.Photo)
-                .HasMaxLength(255)
+                .HasMaxLength(321)
                 .IsRequired();
 
             builder.HasCheckConstraint("CK_Email", "Email LIKE '_%@_%'")
