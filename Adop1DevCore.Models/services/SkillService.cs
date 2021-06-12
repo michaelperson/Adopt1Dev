@@ -45,5 +45,16 @@ namespace Adopte1DevCore.Models.services
         {
             throw new NotImplementedException();
         }
+
+
+        /*Specific*/
+        public IEnumerable<SkillModel> GetSkillByUser(int userId)
+        {
+            return _dc.Skills.Where(s => s.SkillsUser.Count(u => u.UserId == userId) > 0).Select(s => new SkillModel()
+            {
+                SkillId = s.SkillId,
+                Label = s.Label
+            });
+        }
     }
 }

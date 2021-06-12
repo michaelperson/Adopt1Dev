@@ -32,7 +32,27 @@ namespace Adopte1DevCore.Models.services
                   UserId =u.UserId
             });
         }
-
+        public IEnumerable<UserModel> GetFullAll()
+        {
+            List<UserModel> retour = new List<UserModel>();
+            List<User> lu = _dc.Users.Include("SKillsUser").Include("SalariesUser").ToList();
+            foreach (User u in lu)
+            {
+                List<Skill> ls = _dc.SkillsUser.Include("Skill").Where(s => s.UserId == u.UserId).Select(s=>s.Skill).ToList();
+                retour.Add(new UserModel()
+                {
+                    Email = u.Email,
+                    FirstName = u.FirstName,
+                    LastName = u.LastName,
+                    Photo = u.Photo,
+                    UserId = u.UserId,
+                    MinPrice = u.SalariesUser.OrderByDescending(ss=>ss.Amount).Take(1).Select(s => s.Amount).FirstOrDefault(),
+                    Skills = ls.Select(s => new SkillModel() { Label = s.Label, SkillId = s.SkillId })
+                });
+            }
+            return retour;
+        }
+        
         public IEnumerable<UserModel> GetAllBySkill(int skillId)
         {
             return _dc.Users
@@ -63,7 +83,7 @@ namespace Adopte1DevCore.Models.services
                 });
         }
 
-
+        
         public User GetById(int id)
         {
             throw new NotImplementedException();

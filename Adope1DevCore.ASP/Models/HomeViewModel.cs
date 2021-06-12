@@ -1,6 +1,7 @@
 ﻿using Adopte1DevCore.DAL.Entities;
 using Adopte1DevCore.Models;
 using Adopte1DevCore.Models.Interfaces;
+using Adopte1DevCore.Models.services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,9 +31,13 @@ namespace Adopte1DevCore.ASP.Models
             get { return _skillService.GetAll().ToList(); }
         }
        
-    public List<UserModel> Les6DerniersUsers
+        public List<UserModel> Les6DerniersUsers
         {
-            get { return _userService.GetAll().OrderByDescending(s=>s.UserId).Take(10).ToList(); }
+            get { 
+                List<UserModel> Retour = (_userService as UserService).GetFullAll().OrderByDescending(s => s.UserId).Take(10).ToList();
+                
+                return Retour;
+            }
         }
    
 
