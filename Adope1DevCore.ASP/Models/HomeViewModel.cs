@@ -11,9 +11,9 @@ namespace Adopte1DevCore.ASP.Models
 {
     public class HomeViewModel
     {
-        IService<CategoryModel, Category> _catService;
-        IService<SkillModel, Skill> _skillService;
-        IService<UserModel, User> _userService;
+        readonly IService<CategoryModel, Category> _catService;
+        readonly IService<SkillModel, Skill> _skillService;
+        readonly IService<UserModel, User> _userService;
         public HomeViewModel(IService<CategoryModel, Category> catService, IService<SkillModel, Skill> skillService, IService<UserModel, User> userService)
         {
             _catService = catService;

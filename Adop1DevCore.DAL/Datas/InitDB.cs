@@ -14,12 +14,10 @@ namespace Adopte1DevCore.DAL.Datas
         public static void LoadData(ModelBuilder builder)
         {
             /*Ajout des catégories*/
-            Category BackEnd = new Category
-            { CategoryId = 1, Label = "Développement Back-End" };
+            Category BackEnd = new Category() { CategoryId = 1, Label = "Développement Back-End" };
             builder.Entity<Category>().HasData(BackEnd);
 
-            Category FrontEnd = new Category
-            { CategoryId = 2, Label = "Développement Front-End" };
+            Category FrontEnd = new Category() { CategoryId = 2, Label = "Développement Front-End" };
             builder.Entity<Category>().HasData(FrontEnd);
 
             builder.Entity<Category>().HasData(new Category

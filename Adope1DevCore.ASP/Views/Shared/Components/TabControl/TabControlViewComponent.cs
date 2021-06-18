@@ -23,9 +23,9 @@ namespace Adopte1DevCore.ASP.Components
             _userService = userService;
         }
 
-        public IViewComponentResult Invoke(string IdCategorie)
+        public IViewComponentResult Invoke()
         {
-            TabControlComponentViewModel TabHm = new TabControlComponentViewModel(_catService, _skillService, _userService);
+            TabControlComponentViewModel TabHm = new TabControlComponentViewModel(_catService,   _userService);
             return View("TabControlComponent", TabHm);
         }
     }

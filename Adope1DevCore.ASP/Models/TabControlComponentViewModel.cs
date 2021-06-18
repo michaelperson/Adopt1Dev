@@ -11,13 +11,11 @@ namespace Adopte1DevCore.ASP.Models
 {
     public class TabControlComponentViewModel
     {
-        IService<CategoryModel, Category> _catService;
-        IService<SkillModel, Skill> _skillService;
-        IService<UserModel, User> _userService;
-        public TabControlComponentViewModel(IService<CategoryModel, Category> catService, IService<SkillModel, Skill> skillService, IService<UserModel, User> userService)
+        readonly IService<CategoryModel, Category> _catService; 
+        readonly IService<UserModel, User> _userService;
+        public TabControlComponentViewModel(IService<CategoryModel, Category> catService,   IService<UserModel, User> userService)
         {
-            _catService = catService;
-            _skillService = skillService;
+            _catService = catService; 
             _userService = userService;
         }
 
