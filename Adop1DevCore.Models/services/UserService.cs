@@ -71,7 +71,7 @@ namespace Adopte1DevCore.Models.services
         public IEnumerable<UserModel> GetAllByCategory(int CategoryId)
         {
             return _dc.Users
-                .Include("SkillUser")
+                //.Include("SkillUser")
                 .Where(sk => sk.SKillsUser.Count(s => s.Skill.Categories.Where(c=>c.CategoryId == CategoryId).Count()>0 ) > 0)
                 .Select(u => new UserModel()
                 {

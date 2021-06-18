@@ -12,5 +12,6 @@ namespace Adopte1DevCore.Models
         public string Label { get; set; }
 
         public IEnumerable<SkillModel> Skills { get; set; }
+        public IEnumerable<UserModel> Users { get; set; }
     }
 }

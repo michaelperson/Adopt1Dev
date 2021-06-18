@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Adopte1DevCore.DAL.Datas.InitDB" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Datas\InitDB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.Entities.Category" Collapsed="true">
+    <Position X="1.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAEAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.Entities.Salary">
+    <Position X="5.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAECAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Salary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.Entities.SalaryUser">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABACAAAAAAAAAAAAAAAAiAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\SalaryUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.Entities.Skill" Collapsed="true">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAQAAAAAAAAAAAAAEQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Skill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.Entities.SkillUser" Collapsed="true">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABAAAAAAAAAAAAAAAAAAgAAAAAAQABAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\SkillUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.Entities.User" Collapsed="true">
+    <Position X="6.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAACAAAAAAAAgAAAACAAACAAAAAAAABAg=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.EntityConfigs.CategoryConfig" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EntityConfigs\CategoryConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.EntityConfigs.SalaryConfig" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EntityConfigs\SalaryConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.EntityConfigs.SalaryUserConfig" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EntityConfigs\SalaryUserConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.EntityConfigs.SkillConfig" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EntityConfigs\SkillConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.EntityConfigs.SkillUserConfig" BaseTypeListCollapsed="true">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EntityConfigs\SkillUserConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.EntityConfigs.UserConfig" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EntityConfigs\UserConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.Migrations.Initial" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20210602145315_initial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.Migrations.DataSeedng" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20210608091917_'DataSeedng'.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.Migrations.FuulWithDataSeeding" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20210608092036_FuulWithDataSeeding.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.Migrations.FullWithDataSeedingOKWithoutLink" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20210608093937_FullWithDataSeedingOKWithoutLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.Migrations.ChangePasswordType" Collapsed="true">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20210612084529_'ChangePasswordType'.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.Migrations.DataContextModelSnapshot" Collapsed="true">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Migrations\DataContextModelSnapshot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Adopte1DevCore.DAL.DataContext" Collapsed="true">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAACAAASAACAQAAAAAAAAAEAACEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

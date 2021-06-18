@@ -152,14 +152,19 @@
 
                 <div class="category-tab">
                     <!--category-tab-->
-                    <div class="col-sm-12">
+                    @*<div class="col-sm-12">
                         <ul class="nav nav-tabs">
                             @foreach (CategoryModel item in Model.Categories)
                             {
                                 <li><a href="#Tab_@item.CategoryId" data-id="@item.CategoryId" id="Tab_@item.CategoryId" data-toggle="tab">@item.Label</a></li>
-                            } 
+                            }
                         </ul>
                     </div>
+                    <div>*@
+                        @*@await Component.InvokeAsync(typeof(TabControlViewComponent), new { ratingControlType = "hello" })*@
+
+                        <vc:tab-control id-categorie="1"></vc:tab-control>
+                     
                     <div class="tab-content">
                         <div class="tab-pane fade active in" id="tshirt">
                             <div class="col-sm-3">
@@ -271,7 +276,7 @@
                             </div>
                         </div>
 
-                        
+
                     </div>
                 </div><!--/category-tab-->
 
