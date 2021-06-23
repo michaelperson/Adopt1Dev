@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adopte1DevCore.ASP", "Adope
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adopte1DevCore.DAL", "Adop1DevCore.DAL\Adopte1DevCore.DAL.csproj", "{861AD75D-2274-433A-BCCE-A6F36764F724}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adopte1DevCore.Models", "Adop1DevCore.Models\Adopte1DevCore.Models.csproj", "{97F74545-219D-451E-8ABE-C10591E90AAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adopte1DevCore.Models", "Adop1DevCore.Models\Adopte1DevCore.Models.csproj", "{97F74545-219D-451E-8ABE-C10591E90AAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspCore.Tools", "AspCore.Tools\AspCore.Tools.csproj", "{A6D3456A-DAE9-4189-B62A-7A9E581F301D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspCore.Tools", "AspCore.Tools\AspCore.Tools.csproj", "{A6D3456A-DAE9-4189-B62A-7A9E581F301D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adopte1DevCore.ASP.Test", "Adopte1DevCore.ASP.Test\Adopte1DevCore.ASP.Test.csproj", "{8519D5F1-9C41-4794-9728-3A34341A1C7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A6D3456A-DAE9-4189-B62A-7A9E581F301D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6D3456A-DAE9-4189-B62A-7A9E581F301D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6D3456A-DAE9-4189-B62A-7A9E581F301D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8519D5F1-9C41-4794-9728-3A34341A1C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8519D5F1-9C41-4794-9728-3A34341A1C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8519D5F1-9C41-4794-9728-3A34341A1C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8519D5F1-9C41-4794-9728-3A34341A1C7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
